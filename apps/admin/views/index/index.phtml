@@ -1,0 +1,29 @@
+<?php $this->partial('common/header') ?>
+
+<body>
+<?php $this->partial('common/sidebar') ?>
+    <div class="am-container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      后台
+                    </div>
+                    <div class="panel-body tab-content">
+
+<?php echo $this->getContent(); ?>
+
+                        <div class="tab-pane active" role="tabpanel" id="list">
+                          表格
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容 结束-->
+    <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+    });
+    </script>
+    <?php $this->partial('common/footer') ?>
